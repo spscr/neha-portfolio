@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neha Perla — Artist · Dancer · Storyteller</title>
+  <meta name="description" content="Portfolio of Neha Perla: visual art and Bharatanatyam.">
+  <meta name="author" content="Neha Perla">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Neha Perla">
+  <meta property="og:title" content="Neha Perla — Artist · Dancer · Storyteller">
+  <meta property="og:description" content="Portfolio of Neha Perla: visual art and Bharatanatyam.">
+  <meta property="og:image" content="images/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Neha Perla — Artist · Dancer · Storyteller">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%2214%22 fill=%22%235e1520%22/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top" data-bind="name">Neha Perla</a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav__links" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#arangetram">Arangetram</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__text">
+        <p class="eyebrow reveal">Portfolio · 2026</p>
+        <h1 class="hero__name reveal" id="hero-name"><span class="hero__first">Neha</span> <span class="hero__last">Perla</span></h1>
+        <p class="hero__tagline reveal" id="tagline"></p>
+        <p class="hero__intro reveal" data-bind="heroIntro"></p>
+        <a class="link-arrow reveal" href="#work">View selected work <span aria-hidden="true">→</span></a>
+      </div>
+      <figure class="hero__art reveal">
+        <img id="hero-img" src="" alt="">
+      </figure>
+    </section>
+
+    <!-- ART PORTFOLIO -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <header class="section__head reveal">
+        <span class="section__num">01</span>
+        <h2 id="work-title">Selected Work</h2>
+        <p class="section__lede">Painting, drawing and mixed media from my AP Art portfolio and beyond.</p>
+      </header>
+      <ul class="gallery" id="gallery"></ul>
+    </section>
+
+    <!-- ARANGETRAM -->
+    <section class="arangetram" id="arangetram" aria-labelledby="ar-title">
+      <div class="arangetram__inner">
+        <header class="section__head section__head--light reveal">
+          <span class="section__num">02</span>
+          <h2 id="ar-title"></h2>
+          <p class="section__lede" id="ar-sub"></p>
+        </header>
+        <div class="arangetram__grid">
+          <div class="arangetram__story reveal" id="ar-story"></div>
+          <dl class="arangetram__details reveal" id="ar-details"></dl>
+        </div>
+        <div class="ar-gallery" id="ar-gallery" aria-label="Arangetram photographs"></div>
+
+        <section class="margam reveal" id="ar-margam" aria-labelledby="margam-title">
+          <header class="margam__head">
+            <h3 id="margam-title"></h3>
+            <p class="margam__note" id="margam-note"></p>
+          </header>
+          <div class="margam__cols" id="margam-list"></div>
+        </section>
+
+        <div class="videos reveal" id="ar-video"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <header class="section__head reveal">
+        <span class="section__num">03</span>
+        <h2 id="about-title">About</h2>
+      </header>
+      <div class="about__grid">
+        <figure class="about__portrait reveal"><img id="portrait" src="" alt=""></figure>
+        <div class="about__body">
+          <div class="about__bio reveal" id="bio"></div>
+          <ul class="interests" id="interests"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__inner reveal">
+        <span class="section__num">04</span>
+        <h2 id="contact-title"></h2>
+        <p id="contact-text"></p>
+        <a class="contact__email" id="contact-email" href="#"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p id="footer-text"></p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lightbox__close" aria-label="Close (Esc)">×</button>
+    <button class="lightbox__nav lightbox__prev" aria-label="Previous image">‹</button>
+    <figure class="lightbox__figure">
+      <img src="" alt="">
+      <figcaption><span class="lb-title"></span><span class="lb-meta"></span><span class="lb-count"></span></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__next" aria-label="Next image">›</button>
+  </div>
+
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
